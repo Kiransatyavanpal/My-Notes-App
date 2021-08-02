@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <style>
+        body{
+           padding: auto;
+           margin-top: 100px;
+           background-color: rgb(157, 134, 179);
+        }
+        .class{
+            margin-left: 32%;
+            margin-bottom: 2%;
+        }
+        .calculator-screen{
+            margin-left: 11%;
+            margin-top: 5px;
+        }
+        .calci-keys{
+            text-align: center;
+            margin-left: %;
+        }
+        .equal {
+      height: 98%;
+      grid-area: 45/ 48 / 87/ 74;
+    }
+    .card{
+        margin-left: 31%;
+        width : 18rem;
+        background-color:rgb(178, 160, 194);
+        border-width: 10px;
+        border-color: rgb(105, 102, 102);
+    }
+        
+    </style>
+    
+    <h1 class="class"> <u><b>Mini Calculato</b>r</u></h1>
+    <div class="card">
+        <div class="card-body">
+    <input type="text" class="calculator-screen z-depth-10 " value="" disabled />
+    <br>
+    <br>
+<div class="calci-keys">
+    <button type="button " class="operator btn btn-secondary" value="+">+</button>
+ 
+    <button type="button" class="operator btn btn-secondary" value="-">-</button>
+    <button type="button" class="operator btn btn-secondary" value="*">&times;</button>
+    <button type="button" class="operator btn btn-secondary" value="/">&divide;</button>
+    <br>
+    <br>
+
+    <button type="button" value="7" class="btn btn-outline-secondary">7</button>
+    <button type="button" value="8" class="btn btn-outline-secondary mx-4">8</button>
+    <button type="button" value="9" class="btn btn-outline-secondary">9</button>
+
+<br>
+<br>
+    <button type="button" value="4" class="btn btn-outline-secondary">4</button>
+    <button type="button" value="5" class="btn btn-outline-secondary mx-4">5</button>
+    <button type="button" value="6" class="btn btn-outline-secondary">6</button>
+    
+
+
+<br>
+<br>
+    <button type="button" value="1" class="btn btn-outline-secondary">1</button>
+    <button type="button" value="2" class="btn btn-outline-secondary mx-4">2</button>
+    <button type="button" value="3" class="btn btn-outline-secondary">3</button>
+    <br>
+<br>
+
+    <button type="button" value="0" class="btn btn-outline-secondary">0</button>
+    <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+    <button type="button" class="all-clear function btn btn-secondary" value="all-clear">AC</button>
+    <button type="button" class="equal operator btn btn-secondary btn-group-lg"  value="=">=</button>
+
+   </div>
+   </div>
+
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>

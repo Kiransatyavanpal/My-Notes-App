@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body> 
+    <style>
+        body{
+            background-color: rgb(157, 134, 179);
+        }
+        .card{
+            background-color: rgb(178, 160, 194);
+        }
+        #navbarDropdown{
+cursor: pointer;
+        }
+        #oldestFirst{
+            cursor: pointer;
+        }
+        #newestFirst{
+            cursor: pointer;
+        }
+    </style>
+    
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Magic Notes!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sort by
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <li class="dropdown-item" onclick="oldestfirst();" id="oldestFirst" >Newest First</li>
+                          <li class="dropdown-item" onclick="newestFirst();" id="newestFirst" >Oldest First</li>
+                        <li id="dismiss"></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="calci.html">Calculator</a>
+                      </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div  style="text-align:right; margin-right:4%; margin-top:2% ;height:25px; border-width: 100px;" id="date">
+        2021-7-30
+      </div>
+    <div  style="text-align:right; margin-right:4%;" id="clock">
+      8:10:45
+    </div>
+   
+   
+    <div class="container my-3">
+        <h1 class="text-center ; "><u> Welcome To Magic Notes!</u></h1>
+        <hr>
+        <div class="card">
+            
+
+            <div class="card-body ;rounded-circle; ">
+                <div class="mb-3 border-dark">
+                    <h5 for="exampleFormControlInput1" class="form-label">Note Title</h5>
+                    <input type="text" class="form-control ; border-dark " id="addTitle" placeholder="Add your note title here.">
+                  </div>
+                <h5 class="card-title my-3 ">Add a Note</h5>
+                <div class="form-floating;">
+                    <textarea class="form-control my-3 border-dark" placeholder="Add your note here." id="addTxt"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2 "></label>
+                </div>
+
+                <button class="btn btn-secondary my-2" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <h1 class="text-center"> Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fliud">
+           
+         </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
