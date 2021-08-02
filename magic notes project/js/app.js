@@ -55,7 +55,7 @@ function shownotes() {
     //console.log(notes);
     if (notes == null) {
         notesObj = [];
-        Exit();
+        
     }
     else {
         notesObj = JSON.parse(notes);
